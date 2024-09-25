@@ -1,5 +1,9 @@
 # vim-tidal-statusline
 
+## TODO 
+
+TODO - Add bootstrap script to create log and tmp directories
+
 This plugin is designed to complement [vim-tidal](https://github.com/tidalcycles/vim-tidal)
 by adding [TidalCycles](http://tidalcycles.org/) data to the vim statusline.
 
