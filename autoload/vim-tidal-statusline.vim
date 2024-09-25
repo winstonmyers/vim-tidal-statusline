@@ -7,11 +7,11 @@ function! tidalcycles#RunTidalScripts()
   " Full path to your Haskell script
   let haskell_cmd = "ghci " g:plug_home . '/vim-tidal-statusline/plugin/vim-tidal-statusline.hs'
   " Run the Haskell script in the background
-  call system(haskell_cmd . ' &')
+  call system(haskell_cmd . ' > ' g:plug_home . '/vim-tidal-statusline/log/haskell.log &')
   " Full path to the python script
-  let python_cmd = "python3 " g:plug_home . '/vim-tidal-statusline/plugin/vim-tidal-statusline.py'
+  let python_cmd = "nohup python3 " g:plug_home . '/vim-tidal-statusline/plugin/vim-tidal-statusline.py'
   " Run the Haskell script in the background
-  call system(python_cmd . ' &')
+  call system(python_cmd . ' > ' g:plug_home . '/vim-tidal-statusline/log/python.log &')
 endfunction
 
 " Function to enable the TidalCycles status line
